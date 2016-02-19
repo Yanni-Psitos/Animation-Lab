@@ -11,4 +11,36 @@
     tools:context="generalassembly.yuliyakaleda.startercode.MainActivity">
 
     <!-- TODO: add edit text, button, text view and a view group-->
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Make A Wish"
+        android:gravity="center_horizontal|top"
+        />
+    <Button
+        android:id="@+id/wishMakerButton"
+        android:text="Wish That Ish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/userInput"
+        android:layout_centerHorizontal="true"
+        android:textColor="#006699" />
+
+    <TextView
+        android:id="@+id/wishOutTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="* WISH *"
+        android:textSize="25dp"
+        android:textColor="#006699" />
+    <ListView
+        android:id="@+id/wishListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/wishOutTv"
+        android:layout_alignParentStart="true"></ListView>
 </RelativeLayout>
